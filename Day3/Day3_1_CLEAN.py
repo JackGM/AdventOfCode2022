@@ -6,9 +6,9 @@ def process_line(line):
     for letter in start:
         if letter in end:
             if letter <= 'Z':
-                priority = ord(letter) - ord('A') + 27  # Index Upper Case from 1
+                priority = ord(letter) - ord('A') + 27
             else:
-                priority = ord(letter) - ord('a') + 1 # Index Lower Case from 1
+                priority = ord(letter) - ord('a') + 1
             return priority
     return 0
 
