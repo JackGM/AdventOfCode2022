@@ -13,8 +13,12 @@ class Stack(object):
         return self.list[-1]
 
 def moveCrate(count,fromStack,toStack):
+    tempStack = Stack([])
     for x in range(count):
         item = dict[fromStack].pop()
+        tempStack.push(item)
+    for x in range(count):
+        item = tempStack.pop()
         dict[toStack].push(item)
 
 dict = {
